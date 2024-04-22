@@ -1,2 +1,4 @@
+github.com/vence722/base122-go v0.0.2 h1:U9hyrbOsw2c1jdg2QPNPvt15cdszVdn7uaxU8K2VrYg=
+github.com/vence722/base122-go v0.0.2/go.mod h1:3bzDQsujP7wNZSqg6jsnNXF+XABfiET4y5qM+YtFPzs=
 golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 h1:0A+M6Uqn+Eje4kHMK80dtF3JCXC4ykBgQG4Fe06QRhQ=
 golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=

@@ -37,6 +37,7 @@ import (
 	"github.com/evanw/esbuild/internal/runtime"
 	"github.com/evanw/esbuild/internal/sourcemap"
 	"github.com/evanw/esbuild/internal/xxhash"
+	"github.com/vence722/base122-go"
 )
 
 type scannerFile struct {
@@ -294,7 +295,7 @@ func parseFile(args parseArgs) {
 		result.ok = true
 
 	case config.LoaderBinary:
-		encoded := base64.StdEncoding.EncodeToString([]byte(source.Contents))
+		encoded := base122.EncodeToString([]byte(source.Contents))
 		expr := js_ast.Expr{Data: &js_ast.EString{Value: helpers.StringToUTF16(encoded)}}
 		helper := "__toBinary"
 		if args.options.Platform == config.PlatformNode {
